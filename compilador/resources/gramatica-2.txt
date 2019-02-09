@@ -1,0 +1,29 @@
+programa->secuencia-sent
+secuencia-sent->secuencia-sent; sentencia
+secuencia-sent->sentencia
+sentencia->sent-if
+sentencia->sent-repeat
+sentencia->sent-assign
+sentencia->sent-read
+sentencia->sent-write
+sent-if->If exp Then secuencia-sent End
+sent-if->If exp Then secuencia-sent else secuencia-sent End
+sent-repeat->Repeat secuencia-sent Until exp
+sent-assign->identificador := exp
+sent-read->Read identificador
+sent-write->Write exp
+exp->exp_simple op_comparacion exp simple
+exp->exp_simple
+op_comparacion-><
+op_comparacion->=
+exp_simple->exp_simple opsuma term
+exp_simple->term
+opsuma->+
+opsuma->-
+term->term opmult factor
+term->factor
+opmult->*
+opmult->/
+factor->( exp )
+factor->numero
+factor->identificador

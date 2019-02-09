@@ -1,0 +1,5 @@
+Caracteres especiales={; esp1,:= esp2,< esp3,= esp4,+ esp5,- esp6,* esp7,/ esp8,( esp9,) esp10}
+Numeros={con punto decimal num0,enteros num1}
+Palabras reservadas={If rsv1,Then rsv2,Else rsv3,End rsv4,Write rsv5,Repeat rsv6,Read rsv7,Until rsv8}
+Identificador o variable={[a-zA-Z][a-zA-Z]}
+Errore={num. terminan 0 e0,}
